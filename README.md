@@ -1,5 +1,8 @@
 # bhsendmail
-Send email via mail utility in alpine
+Send email via mail utility in alpine Docker through Google's SMTP servers.
+
+## Pre-requisite
+Requires an App password to be setup for Google Account with 2FA enabled.
 
 ## Setup
 ```
