@@ -66,7 +66,7 @@ $body_str
 EOF
 
 echo "[*] Sending mail to recipients: $recipients_comma"
-cat "$tmp_file" | ssmtp "$recipients"
+cat "$tmp_file" | ssmtp "$recipients_comma"
 
 echo "[*] Clearing $tmp_file" 
 rm "$tmp_file"
