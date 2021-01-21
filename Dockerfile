@@ -10,6 +10,10 @@ RUN apk add --update \
     less \
     less-doc \
     mailx \
-    vim
+    vim \
+    sed
 
-ENTRYPOINT [ "/bin/bash" ]
+COPY . /app
+WORKDIR /app
+
+ENTRYPOINT [ "/bin/bash", "send_email.sh" ]
