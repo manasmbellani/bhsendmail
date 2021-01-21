@@ -7,7 +7,7 @@ docker build -t bhsendemail:latest .
 ```
 
 ## Usage
-Send an email from `test@gmail.com` with a specific `<app-password>`
+Send an email from `sender@gmail.com` with a specific `<app-password>`
 ```
-docker run --rm bhsendmail:latest test@gmail.com <app-password> test@gmail.com "Test" receiver@gmail.com "Subject" "Email body"
+docker run --rm bhsendmail:latest sender@gmail.com <app-password> sender@gmail.com "Sender" receiver@gmail.com "Subject" "Email body"
 ```
